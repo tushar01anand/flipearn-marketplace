@@ -9,7 +9,11 @@ import adminRoutes from './routes/admin.js';
 import usersRoutes from './routes/users.js';
 import protectionRoutes from './routes/protection.js';
 
+dotenv.config();
 
+const app = express();
+
+// Middleware - CORS first
 app.use(cors({
   origin: [
     'https://flipearn-marketplace.vercel.app',
@@ -17,15 +21,7 @@ app.use(cors({
   ],
   credentials: true
 }));
-dotenv.config();
 
-const app = express();
-
-// Middleware
-app.use(cors({
-  origin: 'http://localhost:3000',
-  credentials: true,
-}));
 app.use(express.json());
 
 // Routes
@@ -36,6 +32,7 @@ app.use('/api/reviews', reviewsRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/protection', protectionRoutes);
+
 // Health check route
 app.get('/api/health', (req, res) => {
   res.json({ status: 'Server is running' });
