@@ -8,7 +8,7 @@ import reviewsRoutes from './routes/reviews.js';
 import adminRoutes from './routes/admin.js';
 import usersRoutes from './routes/users.js';
 import protectionRoutes from './routes/protection.js';
-import cors from 'cors';
+
 
 app.use(cors({
   origin: [
