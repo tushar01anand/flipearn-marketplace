@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#4f46e5"/>
+  
+  <!-- Letter F -->
+  <rect x="60" y="60" width="15" height="80" fill="white"/>
+  <rect x="60" y="60" width="35" height="12" fill="white"/>
+  <rect x="60" y="105" width="30" height="12" fill="white"/>
+  
+  <!-- Letter E -->
+  <rect x="105" y="60" width="15" height="80" fill="white"/>
+  <rect x="105" y="60" width="35" height="12" fill="white"/>
+  <rect x="105" y="105" width="30" height="12" fill="white"/>
+  <rect x="105" y="128" width="35" height="12" fill="white"/>
+  
+  <!-- Star accent -->
+  <path d="M 165 50 L 170 60 L 181 60 L 172 67 L 177 77 L 165 70 L 153 77 L 158 67 L 149 60 L 160 60 Z" fill="#fbbf24"/>
+  
+  <!-- Shine effect -->
+  <circle cx="70" cy="70" r="8" fill="white" opacity="0.3"/>
+</svg>
